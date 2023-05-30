@@ -1,0 +1,300 @@
+scripts vs module
+script : The word script is used to refer to a file containing a logical sequence of orders or a batch processing file. This is usually a simple program, stored in a plain text file
+
+Module : A plain text file, which contains Python code that is designed to be imported and used from another Python file, is called module.
+
+modules are meant to be imported, while scripts are made to be directly executed.
+
+The interpreter is able to run Python code in two different ways:
+
+1.As a script or module
+2.As a piece of code typed into an interactive session
+
+How to Run Python Code Interactively
+
+# printing out "hello world!" to the user
+
+
+
+
+
+
+python3 hello.py > output.txt
+
+python3 -m <module name?
+
+>>>import hello
+
+input("Your name: ")
+
+name = input("Enter a name: ")
+print ("name")
+print(f"Your name is {name}")
+type(name)
+# create a list
+fruits = ['apples', 'bananas', 'peaches', 'pears']
+>>> print(24624656)
+24624656
+
+>>> print(24624656,344,5566,32234,675658.7654)
+24624656 344 5566 32234 675658.7654
+>>> print (numbers)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'numbers' is not defined
+>>> numbers =[2323,23345,23456,33322]
+>>> print (numbers)
+[2323, 23345, 23456, 33322]
+>>> 4
+4
+>>> type(5)
+<class 'int'>
+>>> type(5.89)
+<class 'float'>
+>>> type(0.8e9)
+<class 'float'>
+>>> 4,56e3
+(4, 56000.0)
+>>> 3.453e3
+3453.0
+>>> numbers =['2323','23345','23456','33322']
+>>> print (numbers)
+['2323', '23345', '23456', '33322']
+>>> numbers =2323,23345,23456,33322
+>>> print (numbers)
+(2323, 23345, 23456, 33322)
+
+>>> print ("")
+
+>>> print('This string contains a single quote (') character.')
+  File "<stdin>", line 1
+    print('This string contains a single quote (') character.')
+                                                   ^
+SyntaxError: invalid syntax
+>>> print("This string contains a single quote (') character.")
+This string contains a single quote (') character.
+>>> print('This string contains a single quote (") character.')
+This string contains a single quote (") character.
+>>> print('This string contains a single quote (") and (")character.')
+This string contains a single quote (") and (")character.
+>>> print("This string contains a double quote (\") character.")
+This string contains a double quote (") character.
+>>> print('This string contains a double quote (\") character.')
+This string contains a double quote (") character.
+>>> print('This string contains a double quote \" character.')
+This string contains a double quote " character.
+
+
+>>> print('a\
+... b\
+... dsdjgdafj\
+... ejhgjeggfdsa\
+... djsglagfgds')
+abdsdjgdafjejhgjeggfdsadjsglagfgds
+>>> print('foo\\bar')
+foo\bar
+>>> print('foo\tbar')
+foo	bar
+print("a\nb")
+a
+b
+
+type(False)
+a_true_alias = True
+
+>>> a_true_alias 
+True
+>>> 
+>>> True==1
+True
+== is a checking..... not assigning value
+>>> True==1
+True
+>>> True==2
+False
+>>> False==0
+True
+>>> False==4
+False
+>>> not True
+False
+>>> equality operator (==)
+inequality operator (!=)
+>>> 4!=4
+False
+>>> 4>5
+False
+>>> 4>3
+True
+>>> 5.5<2.5
+False
+>>> 
+>>> x=[]
+>>> y=[]
+>>> x is x 
+True
+>>> x is not x
+False
+>>> x is not y (checks if both are same objects or not)
+True
+>>> x==y (checks the value of both)
+True
+
+small_even = [2, 4]
+>>> 1 in small_even
+False
+>>> 2 in small_even
+True
+>>> "e" in "hello beautiful world"
+True
+>>> "beautiful" in "hello beautiful world"
+True
+>>> 1 < 2 < 3
+True
+>>> 1 < 2 > 3
+False
+>>> 
+>>> 1 < 2 and 2 < 3
+True
+>>> 
+>>> 1 == 1.0 < 0.5
+False
+>>> 1 == 1.0 == True
+True
+>>> 
+
+ a=0
+>>> a is a < 1
+True
+>>> a is a < 0
+False
+>>> (a is a) < 1
+False
+>>> 
+>>> 
+>>> a is (a < 1)
+False
+>>> a is a < 1
+True
+>>> 
+The expression a is a is True, as it would be for any value evaluated against itself.
+The expression a < 1 is True since 0 is less than 1.
+
+
+>>> "b" in "aba" in "cabad" < "cabae"
+True
+>>> "b" in "aba" in "cabad" < "cabac"
+False
+>>> "b" in "aba" in "cabad" < "cabak"
+True
+>>> greeting = "hello"
+>>> quality = "good"
+>>> end_greeting = "farewell"
+>>> greeting is not quality not in end_greeting
+True
+
+>>> bool(3), bool(-5), bool(0)
+(True, True, False)
+>>> bool([1]), bool([])
+(True, False)
+>>> not 1
+False
+>>> not 0
+True
+
+
+>>> x=1
+>>> y=2
+>>> print(x+y)
+3
+>>> print(x-y)
+-1
+>>> print(x*y)
+2
+>>> print(x/y)
+0.5
+>>> print(max(x,y,x))
+2
+>>> print(min(x,y,x))
+1
+>>> print(min(x,y,(x/y)))
+0.5
+>>> print(x%y)
+1
+>>> print(x//y)
+0
+>>> print(x**y)
+1
+>>> 
+#Assignment operators
+a-=3 # a = a-3
+a*=4 # a = a*4
+a/=3 # a = a/3
+a**=10 # a =a **10
+a%= 20 # a = a %10
+
+Comparison operators
+a==b
+a!=b
+a>=b
+a<=b
+a>b
+a<b
+
+ Logical operators
+True and True     True
+True and false    False
+
+True or False     True
+True or True      True
+
+not True          False
+
+
+isinstance()
+function checks if the object (1st arg) is an instance or subclass of classinfo class(2nd arg)
+
+numbers=[1,2,3,4,5,6]
+
+result =isinstance(numbers, list)
+print (result)
+
+
+Python Arithmetic Operators
+x=1
+y=2
+
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
+print(max(x,y,x))
+print(min(x,y,x))
+print(x%y)
+print(x//y)  floor division
+print(x**y)  power
+
+Assignment Operators
+= 	Assignment Operator
++= Addition Assignment     a += 1 # a = a + 1
+-= Subtraction Assignment  a -= 3 # a = a - 3
+*= Multiplication Assignment  a *= 4 # a = a * 4
+/= Division Assignment         a /= 3 # a = a / 3
+%= Remainder Assignment     a %= 10 # a = a % 10
+**= Exponent Assignment     a **= 10 # a = a ** 10
+
+Comparison Operators
+a = 5
+b = 2
+# equal to operator
+print('a == b =', a == b)
+
+# not equal to operator
+print('a != b =', a != b)
+
+isinstance()
+function checks if the object (first argument) is an instance or subclass of classinfo class (second argument).
+numbers = [1, 2, 3, 4, 2, 5]
+# check if numbers is instance of list
+result = isinstance(numbers, list)
+print(result)   #true
